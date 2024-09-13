@@ -255,7 +255,7 @@ class CanvasPositionMarker:
                     self.polygon, self.big_circle, self.canvas_image = None, None, None
 
                 # delete text
-                self.map_widget.canvas.delete(self.canvas_text, canvas_range)
-                self.canvas_text, canvas_range = None, None
+                self.map_widget.canvas.delete(self.canvas_text, self.canvas_range)
+                self.canvas_text, self.canvas_range = None, None
 
             self.map_widget.manage_z_order()
